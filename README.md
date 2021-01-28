@@ -1,4 +1,4 @@
-# Object Detection - Image Augmentation
+# Image Augmentation for Object Detection
 
 Images augmentation for Object detection tasks
 
@@ -57,4 +57,13 @@ RESIZE_VALUE=416
 
 ```
 
-Make sure to Select atleast one Augmentation Type
+Make sure to Select atleast one Augmentation Type, Make your changes and save **user_inputs.ini** file
+
+```bash
+python augmentation.py
+```
+
+
+## Acknowledgements
+
+ [Data Augmentation For Object Detection](https://github.com/Paperspace/DataAugmentationForObjectDetection) for more information.
