@@ -37,14 +37,14 @@ AUGMENT_FOLDER=image_output  # Images save into this directory after augmentaion
 AUGMENT_CSV=output.csv  # CSV file which contain augmentation values
 ```
 
-If you want to Rotate Image set ROTATE_IMAGES=True 
+If you want to Rotate Image set **ROTATE_IMAGES=True**
 
 ```bash
 [Random_Rotate]
 ROTATE_IMAGES=True 
 ROTATE_VALUE=45
 ```
-Further more If you want to Rotate and Resize the images,
+Further more If you want to Rotate and Resize the images in same time, set **ROTATE_IMAGES=True** & **RESIZE_IMAGES=True**
 
 ```bash
 [Random_Rotate]
