@@ -27,14 +27,24 @@ pip install -r requirements.txt
 
 ## Image Augmentation
 
-Make changes to **user_inputs.ini** , If you want to Rotate Image in 45 degrees set ROTATE_IMAGES=True 
+Make changes to **user_inputs.ini** , 
+
+```bash
+[USER_DATA]
+IMAGE_FOLDER=images   # Folder path which contain images
+INPUT_CSV=train.csv   # CSV file path with 
+AUGMENT_FOLDER=image_output  # Images save into this directory after augmentaion
+AUGMENT_CSV=output.csv  # CSV file which contain augmentation values
+```
+
+If you want to Rotate Image set ROTATE_IMAGES=True 
 
 ```bash
 [Random_Rotate]
 ROTATE_IMAGES=True 
 ROTATE_VALUE=45
 ```
-Further more If you want to Rotate and Resize the images, set
+Further more If you want to Rotate and Resize the images,
 
 ```bash
 [Random_Rotate]
@@ -47,4 +57,4 @@ RESIZE_VALUE=416
 
 ```
 
-Make sure that to Select atleast one Augmentation Type
+Make sure to Select atleast one Augmentation Type
