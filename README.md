@@ -1,4 +1,4 @@
-# Object Detection - Data Augmentation
+# Object Detection - Image Augmentation
 
 Images augmentation for Object detection tasks
 
@@ -27,4 +27,24 @@ pip install -r requirements.txt
 
 ## Image Augmentation
 
-Test
+Make changes to **user_inputs.ini** , If you want to Rotate Image in 45 degrees set ROTATE_IMAGES=True 
+
+```bash
+[Random_Rotate]
+ROTATE_IMAGES=True 
+ROTATE_VALUE=45
+```
+Further more If you want to Rotate and Resize the images, set
+
+```bash
+[Random_Rotate]
+ROTATE_IMAGES=True 
+ROTATE_VALUE=45
+
+[Resize]
+RESIZE_IMAGES=True 
+RESIZE_VALUE=416
+
+```
+
+Make sure that to Select atleast one Augmentation Type
