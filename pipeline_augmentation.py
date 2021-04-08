@@ -66,7 +66,7 @@ def data_aug_pipeline(img_dir,input_csv,seq,output_path,output_csv):
                 timestr = time.strftime("%Y%m%d_%H%M%S")
                 np_arr=np.array(v)
                 bboxes = np_arr.astype(np.float)
-                img = cv2.imread(val)[:,:,::-1]
+                img = cv2.imread(val)#[:,:,::-1]
                 
                 img_, bboxes_ = seq(img.copy(), bboxes.copy())
                 
