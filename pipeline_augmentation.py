@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 import csv
 import sys
-
+import tqdm
 
 
 def augmentation_seq(scale_data,translate_data,rotate_data,shear_data,resize_data,hsv_data,flip_data,
@@ -60,7 +60,7 @@ def data_aug_pipeline(img_dir,input_csv,seq,output_path,output_csv):
         os.makedirs(output_path)
 
     full_data=[]
-    for k,v in data_dict.items():
+    for k,v in tqdm.tqdm(data_dict.items()):
         for key,val in name_dict.items():
             if k==key:
                 timestr = time.strftime("%Y%m%d_%H%M%S")
